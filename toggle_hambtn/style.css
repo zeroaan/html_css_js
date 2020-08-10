@@ -1,0 +1,78 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.navigation {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #555555;
+    z-index: 1000;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation.active {
+    clip-path: circle(75%);
+}
+.navigation .ham-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navigation .ham-btn span {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 1.5px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+.navigation .ham-btn span:nth-child(1) {
+    top: 30%;
+}
+.navigation .ham-btn span:nth-child(2) {
+    top: 50%;
+}
+.navigation .ham-btn span:nth-child(3) {
+    top: 70%;
+}
+
+.navigation.active .ham-btn span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+.navigation.active .ham-btn span:nth-child(2) {
+    opacity: 0;
+}
+.navigation.active .ham-btn span:nth-child(3) {
+    top: 70%;
+    transform: translate(-50%, -600%) rotate(-45deg);
+}
+
+.navigation .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.navigation .links a {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
