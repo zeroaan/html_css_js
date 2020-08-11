@@ -1,0 +1,37 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    background: url("https://i.pinimg.com/originals/54/4c/4b/544c4ba5e4148ccdf54696bedf665815.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
