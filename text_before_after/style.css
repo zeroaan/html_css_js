@@ -1,0 +1,57 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: rgb(0, 168, 0);
+    background-color: rgb(230, 230, 230);
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+p::before,
+p::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 5px solid rgb(0, 168, 0);
+    transition: all 1s ease;
+}
+
+p::before {
+    top: 0;
+    left: 0;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+p::after {
+    right: 0;
+    bottom: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+
+p:hover::before,
+p:hover::after {
+    width: 93%;
+    height: 84%;
+}
