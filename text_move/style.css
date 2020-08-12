@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+}
+
+h2::before {
+    content: "TEXT MOVE";
+    position: absolute;
+    animation: textmove 0.2s ease infinite;
+    color: aqua;
+    z-index: -1;
+}
+h2::after {
+    content: "TEXT MOVE";
+    position: absolute;
+    left:0;
+    animation: textmove 0.2s ease infinite;
+    color: aqua;
+    z-index: -1;
+}
+
+@keyframes textmove {
+    0% {
+        transform: translate(-1px, 1px);
+    }
+    25% {
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        transform: translate(1px, 1px);
+    }
+    75% {
+        transform: translate(1px, -2px);
+    }
+    100% {
+        transform: translate(-1px, 1px);
+    }
+}
