@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact {
+    width: 305px;
+    height: 48px;
+    user-select: none;
+}
+i {
+    margin-left: 30px;
+    font-size: 3rem;
+    color: #bbb;
+    transition: 0.5s;
+    cursor: pointer;
+}
+i:first-child {
+    margin-left: 0px; 
+}
+i:hover {
+    color: black;
+    transform: translateY(-5px);
+}
+
+.contact:hover i:not(:hover) {
+    opacity: 0.2;
+}
