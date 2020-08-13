@@ -1,3 +1,5 @@
+/*
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -46,4 +48,50 @@ input:focus ~ label {
     transform: translate(-100%, -50%) scale(0.8);
     padding-left: 0px;
     color: black;
+}
+*/
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+input, label {
+    transition: 0.5s ease;
+}
+
+input {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 20px;
+}
+
+label {
+    color: #ccc;
+    font-size: 20px;
+    transform: translate(-100%, 50%);
+    cursor: text;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus{
+    border-bottom: 2px solid black;
+}
+
+input:focus ~ label{
+    color: black;
+    transform: translate(-110%, -60%) scale(0.7);
 }
