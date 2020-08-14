@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.click {
+    background-color: lightblue;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 55px;
+    letter-spacing: 5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px lightblue;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+.click:hover {
+    box-shadow: 0 0 20px lightblue;
+}
+.click span {
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: -41px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    z-index: -1;
+    box-shadow: 0 0 15px white, 0 0 20px white, 0 0 50px white;
+}
+/* 마우스 클릭 시 효과 적용 */
+.click:focus {
+    color: black;
+    z-index: 1;
+}
+.click:focus span{
+    transform: scale(10);
+    opacity: 0;
+}
+
+
+/* 마우스를 올리면 효과 적용 
+.click:hover {
+    color: black;
+    z-index: 1;
+}
+.click:hover span{
+    transform: scale(3)
+}
+*/
