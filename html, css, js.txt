@@ -1,0 +1,11 @@
+font-size
+: px, em, rem 차이
+
+위치
+display: flex;
+justify-content: center;
+align-items : center;
+// 모두 다 가운데
+
+box-sizing: border-box;
+: 테두리 포함해서 크기 조절
