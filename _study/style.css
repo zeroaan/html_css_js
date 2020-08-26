@@ -1,0 +1,38 @@
+* {
+    color: green;
+    transition: 1s ease;
+  }
+  
+  li {
+    color: blue;
+  }
+  
+  li#special {
+    color: pink;
+  }
+  
+  .red {
+    background: yellow;
+    width: 100px;
+    height: 100px;
+  }
+  
+  button {
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: red;
+    background: pink;
+    border: none;
+    transform: scale(1.5) translateY(10px);
+  }
+  
+  a[href$=".com"] {
+    color: purple;
+  }
