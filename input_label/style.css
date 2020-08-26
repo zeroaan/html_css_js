@@ -1,4 +1,4 @@
-/*
+
 
 .container {
     width: 100vw;
@@ -49,9 +49,9 @@ input:focus ~ label {
     padding-left: 0px;
     color: black;
 }
-*/
 
 
+/*
 .container {
     display: flex;
     justify-content: center;
@@ -95,3 +95,4 @@ input:focus ~ label{
     color: black;
     transform: translate(-110%, -60%) scale(0.7);
 }
+*/
