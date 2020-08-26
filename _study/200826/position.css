@@ -1,0 +1,41 @@
+/* div, span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
+div {
+  background: red;
+  display: inline-block;
+}
+
+span {
+  background: blue;
+  display: block;
+}  */
+
+@media screen and (min-width: 800px) {
+    div {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        background: red;
+    }
+    
+    .container {
+        background: yellow;
+        left: 20px;
+        top: 20px;
+        position: relative;
+    }
+    
+    .box {
+        background: blue;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        left: 20px;
+        top: 20px;
+        position: sticky;
+    }
+}
