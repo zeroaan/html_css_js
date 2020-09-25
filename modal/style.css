@@ -2,6 +2,10 @@ body {
   font-family: "Jua", sans-serif;
   margin: 0;
 }
+h1 {
+  color: white;
+  user-select: none;
+}
 
 .box {
   position: relative;
@@ -57,19 +61,22 @@ body {
 }
 .modal {
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 15%;
   margin: 0 20%;
   border-radius: 10px;
   display: none;
 }
 .modal h1 {
+  color: black;
   margin: 50px 0 30px 0;
   text-align: center;
 }
 .modal p {
   max-width: 70%;
   margin: 30px auto 40px auto;
+  height: 280px;
+  overflow: auto;
 }
 .exitbtbox {
   display: flex;
